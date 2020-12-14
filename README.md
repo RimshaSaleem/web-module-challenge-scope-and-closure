@@ -43,6 +43,10 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -67,6 +71,10 @@ a. Where is closure used in this code? How can you tell?
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
 c. What is the lexical scope of `newRoll`? 
 
+a1. dansRoll and zoesRoll are both closures
+a2. They share the same function body definition, but store different lexical environments. In dansRoll 's lexical environment, name is Dan, while in the lexical environment for zoesRoll, name is Zoe
+b. It will return random numbers always
+c. None
 
 ### Task 3 - Stretch Goals
 
